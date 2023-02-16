@@ -9,7 +9,7 @@ This query is for the siteQs to confirm a Q is scheduled, so they can EH someone
   * 5 - Thursday
   * 6 - Friday
   * 7 - Saturday
-* weeks - how many weeks out to report on
+* WEEKS - how many weeks out to report on
 
 ```sql
 set @AO_CID = 'C02NH9HJ1RD';
@@ -25,7 +25,7 @@ select
 from f3stcharles.qsignups_master
 where ao_channel_id = @AO_CID
 and event_date > now()
-and event_date < ( now() + INTERVAL (@weeks*7+1) day)
+and event_date < ( now() + INTERVAL (@WEEKS*7+1) day)
 and dayofweek(event_date)=@AO_DOW
 order by event_date asc 
 ```

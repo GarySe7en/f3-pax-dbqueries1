@@ -1,6 +1,6 @@
 # f3-pax-dbqueries1
 Some of my favorite queries.
 
-(do-we-have-a-q-scheduled.md)
+[Do we have a Q scheduled when I'm on site duty?](do-we-have-a-q-scheduled.md)
 
-(siteq-callouts1.md)
+[Who needs a little EH and called out in the pre-blast?](siteq-callouts1.md)

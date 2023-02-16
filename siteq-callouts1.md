@@ -1,5 +1,7 @@
+This query checks the attendance database and counts how many times a PAX has attended a specific AO over the past 3 months. Compare that with total attendence. See who are your regulars, who may be posting regularly but at another AO, and who needs some encouragement to come out and post again.
+
 ```sql
-set @AO = 'ao_iron_lion';
+set @AO = 'ao_NAME_HERE';
 
 SELECT PAX
 , @AO as AO
@@ -14,4 +16,5 @@ from f3naperville.attendance_view
 where date > ( now() - INTERVAL 3 month)
 group by PAX
 order by AO_last desc, pax asc
+limit 100
 ```

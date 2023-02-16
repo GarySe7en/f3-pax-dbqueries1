@@ -1,7 +1,7 @@
 This query checks the attendance database and counts how many times a PAX has attended a specific AO over the past 3 months. Compare that with total attendence. See who are your regulars, who may be posting regularly but at another AO, and who needs some encouragement to come out and post again.
 
-Make sure you set your regional database name at FROM, currently set to f3naperville.attendance_view
-Set your AO name as it appears in the database at the @AO variable.
+* Make sure you set your regional database name at FROM, currently set to f3naperville.attendance_view
+* Set your AO name as it appears in the database at the @AO variable.
 
 ```sql
 set @AO = 'ao_NAME_HERE' ;
